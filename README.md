@@ -10,5 +10,5 @@
 
 点击Add tab按钮，新建的tab页面的textedit将会展示传进来的时间戳：
 
-![image-20210510234526554](C:/Users/wadew/AppData/Roaming/Typora/typora-user-images/image-20210510234526554.png)
+![image-20210510234526554](https://i.loli.net/2021/05/10/U6abEDxzfCq137Y.png)
 
