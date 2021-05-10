@@ -21,6 +21,8 @@ void MainWindow::on_tabWidget_tabCloseRequested(int index)
 
 void MainWindow::on_pushButton_clicked()
 {
-    ui->tabWidget->addTab(new Form(), QString("Tab %0").arg(ui->tabWidget->count() + 1));
+    int timestamp = std::chrono::duration_cast< std::chrono::milliseconds >(
+        std::chrono::system_clock::now().time_since_epoch()).count();
+    ui->tabWidget->addTab(new Form(this, timestamp), QString("Tab %0").arg(ui->tabWidget->count() + 1));
     ui->tabWidget->setCurrentIndex(ui->tabWidget->count() - 1);
 }
